@@ -1,13 +1,113 @@
-body {
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #E4E4EE;
+}
+
+.card {
+  width: 25rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0 0.5rem;
+}
+
+.card-header {
+  border-bottom: 1px solid #f6f6f6;
+  padding: 1rem 1.2rem;
+  background-color: #5C507B;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+
+.card-body {
+  padding: 1rem 1.2rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #343434;
+  margin-left: 0.5rem;
+}
+
+input[type="number"] {
+  width: 20rem;
+  font-size: 0.8rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.2rem;
+  border: 1px solid #f3f3f3;
+  margin: 0.5rem;
+}
+
+input[type="checkbox"] {
+  accent-color: #5C507B;
+}
+
+input:focus {
+  outline: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-container {
+  width: 130px;
+  padding: 0.4rem;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #5C507B;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: none;
+}
+
+.error {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #f00;
+}
+
+.password {
+  width: 23rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.password > label {
+  font-size: 0.9rem;
+  color: #000;
+  margin: 0;
+}
+
+.password > p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin: 0.3rem 0;
 }
